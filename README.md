@@ -20,3 +20,8 @@ Any change pushed to GitHub triggers Jenkins and updates the deployed applicatio
 
 ## Outcome
 Successfully implemented CI/CD pipeline with automated deployment.
+## 📄 Demonstration
+A detailed PDF demonstrating the Jenkins CI/CD pipeline and automated deployment is available below:
+
+➡️ docs/DEMONSTRATION.pdf
+
