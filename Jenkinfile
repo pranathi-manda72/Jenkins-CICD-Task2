@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main',
+                url: 'https://github.com/pranathi-manda72/Jenkins-CICD-Task2.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Build stage - No build needed for HTML'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                bat '''
+                echo Deploying application...
+                if not exist C:\\deploy mkdir C:\\deploy
+                copy index.html C:\\deploy\\index.html
+                '''
+            }
+        }
+    }
+}
